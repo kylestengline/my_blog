@@ -1,0 +1,15 @@
+<div id="all-the-posts">
+  <div class="posts">
+    <% @posts.each do |p| %>
+      <div class="created-at">
+        <%= p.created_at %>
+      </div>
+      <div class="title">
+        <%=link_to p.title, post_path(p.id) %>
+      </div>
+      <div class="content">
+        <%= p.content %>
+      </div>
+    <% end %>
+  </div>
+</div>
