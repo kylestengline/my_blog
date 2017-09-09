@@ -1,5 +1,5 @@
 body {
-  background-color: #4968DB;
+  background-color: #fff;
 }
 
 div#welcome-page {
@@ -35,6 +35,12 @@ a {
   color: #000;
 }
 
+a:hover {
+  transition: 1s;
+  background-color: black;
+  color: #4968DB;
+}
+
 .to-posts {
   font-size: 45px;
   margin-top: 10%;
@@ -43,5 +49,5 @@ a {
 
 .life-stuff, .code-stuff {
   padding: 10px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
