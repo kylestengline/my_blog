@@ -23,8 +23,24 @@
     <span class="i">I</span>
     <span class="t">t</span>
   </div>
-  <div class="to-posts">
-    <%= link_to "Life In General", lives_path, class: "life-stuff" %>
-    <%= link_to "Code", codes_path, class: "code-stuff" %>
+  <div class="posts">
+    <% if signed_in? %>
+      <div class="admin-signed-in-posts">
+        <%= link_to "Admin Life Posts", users_lives_path, class: "admin-life-stuff" %>
+        <%= link_to "Admin Code Posts", users_codes_path, class: "admin-code-stuff" %>
+        <div class="sign-out-path">
+          <%= link_to "Sign Out", sign_out_path, method: :delete %>
+        </div>
+        <div class="new-post">
+          <%= link_to "New Life Post", new_users_life_path, class: "new-life-post" %>
+          <%= link_to "New Code Post", new_users_code_path, class: "new-code-post" %>
+        </div>
+      </div>
+    <% else %>
+      <div class="non-signed-in-posts">
+        <%= link_to "Life", lives_path, class: "life-stuff" %>
+        <%= link_to "Code", codes_path, class: "code-stuff" %>
+      </div>
+    <% end %>
   </div>
 </div>

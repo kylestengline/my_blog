@@ -17,12 +17,12 @@ span {
 
 .in-the-middle {
   float: left;
-  margin-left: 10.5%;
+  margin-left: 11%;
 }
 
 .of-all-of-it {
   float: left;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 20px;
 }
 
@@ -41,7 +41,7 @@ a:hover {
   color: #4968DB;
 }
 
-.to-posts {
+.posts {
   font-size: 45px;
   margin-top: 10%;
   margin-right: 7%;
@@ -49,5 +49,16 @@ a:hover {
 
 .life-stuff, .code-stuff {
   padding: 10px;
-  margin-left: 2%;
+  margin-left: 10%;
+  margin-right: 1.5%;
+  text-decoration: underline;
+}
+
+.admin-life-stuff, .admin-code-stuff {
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 100px;
 }
