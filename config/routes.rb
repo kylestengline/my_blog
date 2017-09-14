@@ -2,9 +2,6 @@ Rails.application.routes.draw do
 
   root to: "welcome#index"
 
-  get "posts/life-in-general", as: "life_in_general"
-  get "posts/code", as: "code"
-
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, controller: "clearance/sessions", only: [:create]
 
@@ -19,9 +16,11 @@ Rails.application.routes.draw do
   get "/sign_up" => "clearance/users#new", as: "sign_up"
 
   namespace :users do
-    resources :posts
+    resources :lives
+    resources :codes
   end
 
-  resources :posts, only: [:index, :show]
+  resources :lives, only: [:index, :show]
+  resources :codes, only: [:index, :show]
 
 end

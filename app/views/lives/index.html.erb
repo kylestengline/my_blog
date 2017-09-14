@@ -1,14 +1,14 @@
 <div id="all-the-posts">
   <div class="posts">
-    <% @posts.each do |p| %>
+    <% @life.each do |l| %>
       <div class="created-at">
-        <%= p.created_at.to_date %>
+        <%= l.created_at.to_date %>
       </div>
       <div class="title">
-        <%=link_to p.title, post_path(p.id) %>
+        <%=link_to l.title, life_path(l.id) %>
       </div>
       <div class="content">
-        <%= p.content %>
+        <%= l.content %>
       </div>
     <% end %>
   </div>
