@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function(){
-  var postLinks = $(".to-posts");
+  var postLinks = $(".posts");
   postLinks.hide();
 
   var firstDiv = $('.in-the-middle');
@@ -18,4 +18,9 @@ $(document).ready(function(){
   setTimeout(function(){
     postLinks.fadeIn(1000);
   }, 4500);
+
+  //Hide flash after 2 secs
+  setTimeout(function(){
+    $('#flash_notice').hide();
+  }, 2000);
 });
