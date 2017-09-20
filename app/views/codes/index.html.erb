@@ -1,14 +1,14 @@
 <div id="all-the-posts">
-  <div class="posts">
+  <div class="code-posts">
     <% @code.each do |c| %>
       <div class="created-at">
         <%= c.created_at.to_date %>
       </div>
       <div class="title">
-        <%=link_to c.title, code_path(c.id) %>
+        <%= link_to c.title, code_path(c.id) %>
       </div>
       <div class="content">
-        <%= c.content %>
+        <%= truncate c.content, length: 300 { link_to "keep reading", code_path(c.id) } %>
       </div>
     <% end %>
   </div>

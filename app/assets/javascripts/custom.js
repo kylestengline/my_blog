@@ -8,8 +8,10 @@ $(document).ready(function(){
   var secondDiv = $('.of-all-of-it');
   var firstSet = firstDiv.children();
   var secondSet = secondDiv.children();
+  var footer = $('footer');
   firstSet.hide();
   secondSet.hide();
+  footer.hide();
 
   $("span").each(function(index){
     $(this).delay(150*index).fadeIn(1500);
@@ -17,6 +19,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
     postLinks.fadeIn(1000);
+    footer.fadeIn(1000);
   }, 4500);
 
   //Hide flash after 2 secs
