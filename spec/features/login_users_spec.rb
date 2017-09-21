@@ -15,6 +15,8 @@ RSpec.feature "Users can log in" do
     expect(page).to have_current_path root_path
     expect(page).to have_link "Admin Life Posts" 
     expect(page).to have_link "Admin Code Posts" 
+    expect(page).to have_link "New Code Post" 
+    expect(page).to have_link "New Life Post" 
   end
   
   scenario "#failure" do
