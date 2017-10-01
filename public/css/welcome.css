@@ -17,14 +17,14 @@ span {
 
 .in-the-middle {
   float: left;
-  margin-left: 11.5%;
-  margin-right: 11.5%;
+  margin-left: 10.5%;
+  margin-right: 10.5%;
 }
 
 .of-all-of-it {
   float: left;
-  margin-left: -9%;
-  margin-right: -9%;
+  margin-left: -8.5%;
+  margin-right: -8.5%;
   margin-bottom: 20px;
 }
 
@@ -56,14 +56,21 @@ a:hover {
 
 .life-stuff, .code-stuff {
   float: right;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
   text-decoration: underline;
 }
 
 a.life-stuff {
   margin-left: 18%;
   margin-right: 18%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+a.code-stuff {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .admin-life-stuff, .admin-code-stuff {
