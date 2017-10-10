@@ -1,0 +1,15 @@
+<div id="all-the-posts">
+  <div class="life-posts">
+    <% @lives.each do |l| %>
+      <div class="created-at">
+        <%= l.created_at.to_date %>
+      </div>
+      <div class="title">
+        <%=link_to l.title, user_life_path(l.id) %>
+      </div>
+      <div class="content">
+        <%= truncate l.content, length: 300 { link_to "keep reading", user_life_path(l.id) } %>
+      </div>
+    <% end %>
+  </div>
+</div>

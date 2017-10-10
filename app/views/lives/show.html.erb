@@ -10,12 +10,4 @@
       <%= @life.content %>
     </div>
   </div>
-  <div class="edit-delete-actions">
-    <% if signed_in? %>
-      <%= link_to "Edit", edit_users_life_path(@life.id), class: "edit-button" %>
-      <%= link_to "Delete", users_life_path(@life.id), method: :delete, 
-        data: { confirm: "Are you sure you want to delete this post?" }, class: "delete-button" 
-      %>
-    <% end %>
-  </div>
 </div>

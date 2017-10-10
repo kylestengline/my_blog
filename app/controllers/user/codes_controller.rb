@@ -1,4 +1,6 @@
-class CodesController < ApplicationController
+class User::CodesController < ApplicationController
+  before_action :require_login
+
   def index
     @codes = Code.all
   end
@@ -6,4 +8,5 @@ class CodesController < ApplicationController
   def show
     @code = Code.find(params[:id])
   end
+
 end

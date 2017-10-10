@@ -13,7 +13,7 @@ RSpec.feature "Homepage" do
   end
 
   scenario "when user is signed in it shows different content" do
-    sign_in_user user
+    sign_in_as_user
     expect(page).to have_content "Admin Life Posts"
     expect(page).to have_content "Admin Code Posts"
     expect(page).to have_link "New Code Post" 

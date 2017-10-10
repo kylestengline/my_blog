@@ -1,0 +1,21 @@
+<div id="show-page-posts">
+  <div class="showing-posts">
+    <div class="created-at">
+      <%= @life.created_at.to_date %>
+    </div>
+    <div class="title">
+      <%= @life.title %>
+    </div>
+    <div class="content">
+      <%= @life.content %>
+    </div>
+  </div>
+  <div class="edit-delete-actions">
+    <% if signed_in? %>
+      <%= link_to "Edit", edit_user_life_path(@life.id), class: "edit-button" %>
+      <%= link_to "Delete", user_life_path(@life.id), method: :delete, 
+        data: { confirm: "Are you sure you want to delete this post?" }, class: "delete-button" 
+      %>
+    <% end %>
+  </div>
+</div>

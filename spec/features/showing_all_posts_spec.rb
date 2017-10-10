@@ -2,9 +2,8 @@ require 'rails_helper'
 
 RSpec.feature "Showing all posts" do
 
-  let(:users) { User.create(email: "user@example.com", password: "password") }
-  let!(:lives) { Life.create(created_at: Date.today, title: "All the things", content: "The content of my post", user_id: users.id) }
-  let!(:codes) { Code.create(created_at: Date.today, title: "Code the things", content: "The snippet to my code", user_id: users.id) }
+  let!(:codes) { FactoryGirl.create(:code) }
+  let!(:lives) { FactoryGirl.create(:life) }
 
   before(:each) do
     visit root_path

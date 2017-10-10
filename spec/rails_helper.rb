@@ -6,7 +6,14 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'support/spec_helper'
+require 'support/controller_macros'
+require 'factories/post_factories'
+require 'factories/clearance'
 require "clearance/rspec"
+require 'rails-controller-testing'
+require 'database_cleaner'
+include Warden::Test::Helpers
+Warden.test_mode!
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -29,17 +36,18 @@ require "clearance/rspec"
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+  config.use_transactional_fixtures = false
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   config.before(:all) do
-      FactoryGirl.reload
+    FactoryGirl.reload
   end
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  config.use_transactional_fixtures = false
 
   config.before(:suite) do
     if config.use_transactional_fixtures?
@@ -56,7 +64,7 @@ RSpec.configure do |config|
   end
 
   config.before(:each, type: :feature) do
-          # :rack_test driver's Rack app under test shares database connection
+    # :rack_test driver's Rack app under test shares database connection
     # with the specs, so continue to use transaction strategy for speed.
     driver_shares_db_connection_with_specs = Capybara.current_driver == :rack_test
            
@@ -67,8 +75,8 @@ RSpec.configure do |config|
     end
   end
 
-  #adds this from
-  #https://stackoverflow.com/questions/37753251/actionmailer-not-delivering-confirmation-emails-in-test-environment-rails-4
+  # adds this from
+  # https://stackoverflow.com/questions/37753251/actionmailer-not-delivering-confirmation-emails-in-test-environment-rails-4
   config.before(:each, truncation: true) do 
     Database::Cleaner.strategy = :truncation 
   end

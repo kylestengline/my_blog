@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'clearance'
 gem 'database_cleaner'
-gem 'bootstrap'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,6 +45,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'factory_girl'
+  gem 'warden'
+  gem 'rails-controller-testing'
 end
 
 group :development do

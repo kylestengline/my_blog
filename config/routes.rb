@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get "/sign_out" => "clearance/sessions#destroy"
   get "/sign_up" => "clearance/users#new", as: "sign_up"
 
-  namespace :users do
+  namespace :user do
     resources :lives
     resources :codes
   end
