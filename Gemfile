@@ -47,6 +47,7 @@ group :development, :test do
   gem 'factory_girl'
   gem 'warden'
   gem 'rails-controller-testing'
+  gem 'shoulda'
 end
 
 group :development do

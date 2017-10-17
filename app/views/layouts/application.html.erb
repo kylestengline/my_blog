@@ -8,11 +8,14 @@
     <%= javascript_include_tag 'custom' %>
 
     <!-- Bootstrap -->
+    <% unless current_page? sign_in_path %>
+      <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+      <link href="/css/creative.min.css" rel="stylesheet">
+    <% end %>
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="/css/creative.min.css" rel="stylesheet">
 
     <!-- Custom -->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/welcome.css">
   </head>
 

@@ -1,9 +1,11 @@
 <div class="text-field">
   <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
+  <%= form.text_field :email, type: 'email', class: "form-control" %>
 </div>
 
 <div class="password-field">
   <%= form.label :password %>
-  <%= form.password_field :password %>
+  <%= form.password_field :password, class: "form-control" %>
 </div>
+
+<link rel="stylesheet" href="css/style.css">
