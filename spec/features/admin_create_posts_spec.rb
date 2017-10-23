@@ -22,8 +22,8 @@ RSpec.feature "Admin creates posts" do
     fill_in "Content", with: ""
     click_on "Create Life"
 
-    expect(page).to have_current_path user_lives_path
     failed_post
+    expect(page).to have_current_path user_lives_path
   end
 
   scenario "success in creating new code post" do
@@ -41,8 +41,8 @@ RSpec.feature "Admin creates posts" do
     fill_in "Content", with: ""
     click_on "Create Code"
 
-    expect(page).to have_current_path user_codes_path
     failed_post
+    expect(page).to have_current_path user_codes_path
   end
 
 end

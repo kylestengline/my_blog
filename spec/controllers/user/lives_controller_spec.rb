@@ -24,7 +24,7 @@ RSpec.describe User::LivesController, type: :controller do
       end
     end
 
-    context "#show"
+    context "#show" do
       it "shows one of the life posts" do
         get :show, params: { id: life.id }
         expect(response).to render_template :show
@@ -74,4 +74,5 @@ RSpec.describe User::LivesController, type: :controller do
         }.to change(Life, :count).by(-1)
       end
     end
+  end
 end

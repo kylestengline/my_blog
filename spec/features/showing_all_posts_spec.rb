@@ -12,8 +12,8 @@ RSpec.feature "Showing all posts" do
     click_link "Life"
 
     expect(page).to have_current_path lives_path
+    expect(page).to have_content life.title
     expect(page).to have_content life.created_at.to_date
-    expect(page).to have_link life.title
     expect(page).to have_content life.content.truncate(300)
   end
 
@@ -21,8 +21,8 @@ RSpec.feature "Showing all posts" do
     click_link "Code"
 
     expect(page).to have_current_path codes_path
+    expect(page).to have_content code.title
     expect(page).to have_content code.created_at.to_date
-    expect(page).to have_link code.title
     expect(page).to have_content code.content.truncate(300)
   end
 end
