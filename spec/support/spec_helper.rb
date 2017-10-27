@@ -33,7 +33,3 @@ def create_posts
   let!(:code) { FactoryGirl.create(:code) }
   let!(:life) { FactoryGirl.create(:life) }
 end
-
-def before_filter
-  it { has_before_filters(:require_login) }
-end

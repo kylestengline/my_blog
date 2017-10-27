@@ -38,11 +38,12 @@ class User::CodesController < ApplicationController
   end
 
   def destroy
-    if @code.delete
+    if @code.destroy
       flash[:success] = "Post deleted successfully."
       redirect_to user_codes_path
     else
       render :show
+      flash[:danger] = "Post deleted unsuccessfully."
     end
   end
 

@@ -38,7 +38,7 @@ class User::LivesController < ApplicationController
   end
 
   def destroy
-    if @life.delete
+    if @life.destroy
       flash[:success] = "Post deleted successfully."
       redirect_to user_lives_path
     else

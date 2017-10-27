@@ -12,7 +12,7 @@ RSpec.describe User::LivesController, type: :controller do
   end
 
   describe "admin pages" do
-    before_filter
+    it { has_before_filters(:require_login) }
     render_views
 
     context "#index" do
