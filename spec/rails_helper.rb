@@ -12,6 +12,7 @@ require 'factories/clearance'
 require 'support/controller_macros'
 require 'support/spec_helper'
 require 'factories/post_factories'
+require 'support/matchers/have_filters'
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -34,6 +35,9 @@ require 'factories/post_factories'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+
+  config.include ControllerMacros, type: :controller
+
   config.use_transactional_fixtures = false
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

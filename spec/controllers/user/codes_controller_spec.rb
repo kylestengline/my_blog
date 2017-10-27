@@ -12,6 +12,7 @@ RSpec.describe User::CodesController, type: :controller do
   end
 
   describe "admin pages" do
+    before_filter
     render_views
 
     context "#index" do
@@ -57,6 +58,7 @@ RSpec.describe User::CodesController, type: :controller do
       let(:code2) do 
         { title: "Updated title", content: "Updated content" }
       end
+
       it "updates a code post" do
         put :update, params: { id: code, code: code2 }
         code.reload

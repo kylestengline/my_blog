@@ -7,6 +7,10 @@ RSpec.describe CodesController, type: :controller do
   describe "visitors view code posts" do
     render_views
 
+    before(:each) do
+      expect(response).to have_http_status :success
+    end
+
     context "#index" do
       it "shows all the code posts" do
         get :index

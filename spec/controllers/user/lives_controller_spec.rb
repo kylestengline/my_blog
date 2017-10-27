@@ -12,6 +12,7 @@ RSpec.describe User::LivesController, type: :controller do
   end
 
   describe "admin pages" do
+    before_filter
     render_views
 
     context "#index" do

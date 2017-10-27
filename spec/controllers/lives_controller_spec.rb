@@ -7,6 +7,10 @@ RSpec.describe LivesController, type: :controller do
   describe "visitor views life posts" do
     render_views
 
+    before(:each) do
+      expect(response).to have_http_status :success
+    end
+
     context "#index" do
       it "shows all the life posts" do
         get :index

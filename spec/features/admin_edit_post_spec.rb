@@ -29,7 +29,7 @@ RSpec.feature "Admin edits posts" do
 
   end
 
-  skip scenario "admin can edit life posts" do
+  scenario "admin can edit life posts" do
     visit root_path
     click_on "Admin Life Posts"
     click_on life.title 
