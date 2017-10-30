@@ -4,6 +4,6 @@ class LivesController < ApplicationController
   end
 
   def show
-    @life = Life.find(params[:id])
+    @life = Life.find_by(title: params[:title])
   end
 end
