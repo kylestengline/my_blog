@@ -16,15 +16,12 @@ Rails.application.routes.draw do
   get "/sign_out" => "clearance/sessions#destroy"
   get "/sign_up" => "clearance/users#new", as: "sign_up"
 
-  get '/lives/:title', to: 'lives#show', as: :title
-  #get '/codes/:title', to: 'codes#show', as: :title
-
   namespace :user do
     resources :lives
     resources :codes
   end
 
-  resources :lives, only: [:index]#, :show]
-  resources :codes, only: [:index]#, :show]
+  resources :lives, only: [:index, :show]
+  resources :codes, only: [:index, :show]
 
 end

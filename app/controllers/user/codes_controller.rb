@@ -55,7 +55,7 @@ class User::CodesController < ApplicationController
   end
 
   def set_code
-    @code = Code.find(params[:id])
+    @code = Code.friendly.find(params[:id])
   end
 
 end

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Admin edits posts" do
+RSpec.feature "Admin edits" do
 
   before(:each) do
     sign_in_as_user
@@ -8,7 +8,7 @@ RSpec.feature "Admin edits posts" do
 
   create_posts
 
-  scenario "admin can edit code posts" do
+  scenario "code posts" do
     visit root_path
     click_on "Admin Code Posts"
     click_on code.title 
@@ -20,7 +20,7 @@ RSpec.feature "Admin edits posts" do
     fill_in "code_title", with: "New title"
     fill_in "code_content", with: "New content"
 
-    expect(page).to have_current_path edit_user_code_path(code)
+    expect(page).to have_current_path edit_user_code_path(code.id)
 
     click_on "Update Code"
 
@@ -29,7 +29,7 @@ RSpec.feature "Admin edits posts" do
 
   end
 
-  scenario "admin can edit life posts" do
+  scenario "life posts" do
     visit root_path
     click_on "Admin Life Posts"
     click_on life.title 
@@ -41,7 +41,7 @@ RSpec.feature "Admin edits posts" do
     fill_in "life_title", with: "New title"
     fill_in "life_content", with: "New content"
 
-    expect(page).to have_current_path edit_user_life_path(life)
+    expect(page).to have_current_path edit_user_life_path(life.id)
 
     click_on "Update Life"
 

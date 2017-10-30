@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'lives_controller'
 
 RSpec.describe LivesController, type: :controller do
 
@@ -16,7 +17,7 @@ RSpec.describe LivesController, type: :controller do
         get :index
         expect(response).to render_template :index
         within ".title" do
-          expect(response.body).to have_css "a[href='/user/life/#{life.id}']"
+          expect(response.body).to have_css "a[href='/user/life/#{life.title}']"
         end
       end
     end

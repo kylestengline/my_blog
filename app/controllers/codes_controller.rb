@@ -4,6 +4,6 @@ class CodesController < ApplicationController
   end
 
   def show
-    @code = Code.find(params[:id])
+    @code = Code.friendly.find(params[:id])
   end
 end

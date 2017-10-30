@@ -54,7 +54,7 @@ class User::LivesController < ApplicationController
   end
 
   def set_life
-    @life = Life.find(params[:id])
+    @life = Life.friendly.find(params[:id])
   end
 
 end

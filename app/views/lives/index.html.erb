@@ -5,10 +5,10 @@
         <%= l.created_at.to_date %>
       </div>
       <div class="title">
-        <%=link_to l.title, title_path(l.title) %>
+        <%=link_to l.title, life_path(l) %>
       </div>
       <div class="content">
-        <%= truncate l.content, length: 300 { link_to "keep reading", title_path(l.title) } %>
+        <%= truncate l.content, length: 300 { link_to "keep reading", life_path(l) } %>
       </div>
     <% end %>
   </div>
