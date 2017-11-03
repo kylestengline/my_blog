@@ -54,3 +54,8 @@ body {
   margin-left: 672px;
   margin-right: 672px;
 }
+
+/* Markdown */
+pre > span {
+  letter-spacing: 0px;
+}

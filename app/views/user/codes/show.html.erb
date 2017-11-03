@@ -7,7 +7,7 @@
       <%= @code.title %>
     </div>
     <div class="content">
-      <%= @code.content %>
+      <%= markdown(@code.content) %>
     </div>
   </div>
   <div class="edit-delete-actions">

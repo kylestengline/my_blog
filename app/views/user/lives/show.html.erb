@@ -7,7 +7,7 @@
       <%= @life.title %>
     </div>
     <div class="content">
-      <%= @life.content %>
+      <%= markdown(@life.content) %>
     </div>
   </div>
   <div class="edit-delete-actions">

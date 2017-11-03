@@ -8,7 +8,7 @@
         <%= link_to c.title, user_code_path(c) %>
       </div>
       <div class="content">
-        <%= truncate c.content, length: 300 { link_to "keep reading", user_code_path(c) } %>
+        <%= markdown(truncate c.content, length: 500) { link_to "keep reading", user_code_path(c) } %>
       </div>
     <% end %>
   </div>

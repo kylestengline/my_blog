@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def admin_edit_code
     if signed_in?
       link_to "Edit", edit_user_code_path(@code.id), class: "btn btn-primary btn-lg btn-space" 
@@ -25,5 +26,27 @@ module ApplicationHelper
         data: { confirm: "Are you sure you want to delete this post?" }, 
         class: "btn btn-danger btn-lg btn-space"
     end
+  end
+
+  class CodeRayify < Redcarpet::Render::HTML
+    def block_code(code, language)
+      CodeRay.scan(code, language).div
+    end
+  end
+
+  def markdown(content)
+    coderayified = CodeRayify.new(safe_links_only: true, hard_wrap: true)
+
+    options = {
+      fenced_code_blocks: true,
+      no_intra_emphasis: true,
+      prettify: true,
+      disable_indented_code_blocks: true,
+      lax_spacing: true,
+      superscript: true
+    }
+
+    markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
+    markdown_to_html.render(content).html_safe
   end
 end
