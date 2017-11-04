@@ -1,15 +1,21 @@
-<div id="all-the-posts">
-  <div class="life-posts">
-    <% @lives.each do |l| %>
-      <div class="created-at">
-        <%= l.created_at.to_date %>
+<article>
+  <div class="container">
+    <div id="all-the-posts">
+      <div class="life-posts">
+        <% @lives.each do |l| %>
+          <div class="title">
+            <h1 class="post-title">
+              <%=link_to l.title, life_path(l) %>
+            </h1>
+          </div>
+          <div class="created-at">
+            <%= l.created_at.to_date %>
+          </div>
+          <div class="content">
+            <%= markdown(truncate l.content, length: 1000) %>
+          </div>
+        <% end %>
       </div>
-      <div class="title">
-        <%=link_to l.title, life_path(l) %>
-      </div>
-      <div class="content">
-        <%= markdown(truncate l.content, length: 300) { link_to "keep reading", life_path(l) } %>
-      </div>
-    <% end %>
+    </div>
   </div>
-</div>
+</article>

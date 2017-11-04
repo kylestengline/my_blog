@@ -1,13 +1,19 @@
-<div id="show-page-posts">
-  <div class="showing-posts">
-    <div class="created-at">
-      <%= @life.created_at.to_date %>
-    </div>
-    <div class="title">
-      <%= @life.title %>
-    </div>
-    <div class="content">
-      <%= markdown(@life.content) %>
+<article>
+  <div class="container">
+    <div id="show-page-posts">
+      <div class="showing-posts">
+        <div class="title">
+          <h1 class="post-title">
+            <%= @life.title %>
+          </h1>
+        </div>
+        <div class="created-at">
+          <%= @life.created_at.to_date %>
+        </div>
+        <div class="content">
+          <%= markdown(@life.content) %>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</article>

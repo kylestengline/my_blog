@@ -14,7 +14,7 @@ RSpec.feature "Showing all posts" do
     expect(page).to have_current_path lives_path
     expect(page).to have_content life.title
     expect(page).to have_content life.created_at.to_date
-    expect(page).to have_content life.content.truncate(300)
+    expect(page).to have_content life.content.truncate(1000)
   end
 
   scenario "#code" do
@@ -23,6 +23,6 @@ RSpec.feature "Showing all posts" do
     expect(page).to have_current_path codes_path
     expect(page).to have_content code.title
     expect(page).to have_content code.created_at.to_date
-    expect(page).to have_content code.content.truncate(300)
+    expect(page).to have_content code.content.truncate(1000)
   end
 end
