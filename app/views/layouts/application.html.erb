@@ -3,9 +3,9 @@
   <head>
     <title>My Blog</title>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag "jquery-3.1.1.min.js" %>
+    <%= javascript_include_tag 'jquery-3.1.1.min' %>
     <%= javascript_include_tag 'custom' %>
 
     <!-- Bootstrap -->
@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <%= yield %>
     <%= render 'shared/header' %>
+    <%= yield %>
     <%= render 'shared/main' %>
     <% unless current_page? root_path %>
       <%= render 'shared/footer' %>

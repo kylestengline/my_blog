@@ -30,15 +30,6 @@
           </div>
         </div>
       </div>
-    <% else %>
     </nav>
-    <div class="posts">
-      <% if current_page? "/"  %>
-        <div class="non-signed-in-posts">
-          <%= link_to "Life", lives_path, class: "life-stuff" %>
-          <%= link_to "Code", codes_path, class: "code-stuff" %>
-        </div>
-      <% end %>
-    </div>
   <% end %>
 </header>

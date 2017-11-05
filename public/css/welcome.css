@@ -3,7 +3,7 @@ body {
 }
 
 div#welcome-page {
-  margin-top: 15%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@ span {
   float: left;
   margin-left: -7%;
   margin-right: -7%;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 span.n, .e, .f {
@@ -45,13 +45,13 @@ a:hover {
 
 .posts {
   font-size: 45px;
-  margin-top: 10%;
+  margin-top: 12%;
   margin-right: 7%;
 }
 
 .non-signed-in-posts {
-  margin-right: 17%;
-  margin-left: 17%;
+  margin-right: 17.5%;
+  margin-left: 17.5%;
 }
 
 .life-stuff, .code-stuff {
@@ -63,8 +63,8 @@ a:hover {
 a.life-stuff {
   margin-left: 18.5%;
   margin-right: 18.5%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 a.code-stuff {

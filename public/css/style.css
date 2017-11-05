@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  margin-top: 80px;
+  margin-top: 20%;
   margin-bottom: 80px;
 }
 
@@ -49,6 +49,7 @@ body {
 }
 
 .form-signin input[type="password"] {
+  width: 100%;
   margin-bottom: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -59,20 +60,28 @@ body {
   margin-right: 672px;
 }
 
+.form-signin input[type="email"] {
+  width: 100%;
+}
+
 /* Markdown */
 pre > span {
   letter-spacing: 0px;
 }
 
-/* Form for Posts */
+/* Posts */
+header {
+  margin-top: -12%;
+}
+
 article {
   display: block;
 }
 
 .container {
-  margin-top: 5%;
   margin-right: 120px;
   margin-left: 120px;
+  margin-bottom: 10%;
 }
 
 h1 {
@@ -90,5 +99,35 @@ h1 {
 }
 
 .content > p {
+  font-size: 20px;
+}
+
+/* Form for Posts */
+input.form-control, textarea.form-control {
+  width: 90%;
+  font-size: 15px;
+}
+
+textarea.form-control {
+  height: 250px;
+}
+
+div.col-md-offset-1 {
+  left: -75px;
+}
+
+.form-horizontal {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h3.crud-pages-on-posts {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: -2%;
+}
+
+div.control-label {
   font-size: 20px;
 }
