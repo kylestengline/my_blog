@@ -8,7 +8,7 @@
           </h1>
         </div>
         <div class="created-at">
-          <%= @life.created_at.to_date %>
+          <%= @life.created_at.strftime("%B %d, %Y") %>
         </div>
         <div class="content">
           <%= markdown(@life.content) %>

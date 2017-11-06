@@ -15,7 +15,7 @@ RSpec.feature "visiting a post" do
     expect(page).to have_current_path life_path(life)
     expect(page).to have_content life.title
     expect(page).to have_content life.content
-    expect(page).to have_content life.created_at.to_date
+    expect(page).to have_content life.created_at.strftime("%B %d, %Y")
     expect(page).to have_no_content "Edit"
     expect(page).to have_no_content "Delete"
   end
@@ -27,7 +27,7 @@ RSpec.feature "visiting a post" do
     expect(page).to have_current_path code_path(code)
     expect(page).to have_content code.title
     expect(page).to have_content code.content
-    expect(page).to have_content code.created_at.to_date
+    expect(page).to have_content code.created_at.strftime("%B %d, %Y")
     expect(page).to have_no_content "Edit"
     expect(page).to have_no_content "Delete"
   end

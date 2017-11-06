@@ -9,7 +9,7 @@
             </h1>
           </div>
           <div class="created-at">
-            <%= l.created_at.to_date %>
+            <%= l.created_at.strftime("%B %d, %Y") %>
           </div>
           <div class="content">
             <%= markdown(truncate l.content, length: 1000) %>
