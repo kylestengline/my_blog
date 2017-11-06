@@ -1,6 +1,6 @@
 <div id="welcome-page">
   <div class="in-the-middle">
-    <span class="nothing"></span>
+    <span class="empty"></span>
     <span class="i">I</span>
     <span class="n">n</span> 
     <span class="t">T</span>
@@ -26,7 +26,7 @@
   </div>
 </div>
 <div class="posts">
-  <% if current_page? "/"  %>
+  <% if current_page? root_path  %>
     <div class="non-signed-in-posts">
       <%= link_to "Life", lives_path, class: "life-stuff" %>
       <%= link_to "Code", codes_path, class: "code-stuff" %>

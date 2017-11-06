@@ -102,6 +102,14 @@ h1 {
   font-size: 20px;
 }
 
+p > a {
+  color: #0a5290;
+}
+
+a.post-title-link {
+  color: #0a5290;
+}
+
 /* Form for Posts */
 input.form-control, textarea.form-control {
   width: 90%;

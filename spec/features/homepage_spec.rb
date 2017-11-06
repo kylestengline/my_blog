@@ -7,7 +7,6 @@ RSpec.feature "Homepage" do
   scenario "it shows the content on the homepage" do
     visit root_path
 
-    expect(page).to have_link "Home"
     expect(page).to have_link "Life"
     expect(page).to have_link "Code"
   end

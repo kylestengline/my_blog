@@ -3,7 +3,7 @@ body {
 }
 
 div#welcome-page {
-  margin-top: 10%;
+  margin-top: 12%;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ span.n, .e, .f {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 a:hover {

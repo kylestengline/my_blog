@@ -5,7 +5,7 @@
         <% @codes.each do |c| %>
           <div class="title">
             <h1 class="post-title">
-              <%= link_to c.title, code_path(c) %>
+              <%= link_to c.title, code_path(c), class: "post-title-link" %>
             </h1>
           </div>
           <div class="created-at">
