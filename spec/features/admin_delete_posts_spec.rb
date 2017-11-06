@@ -9,9 +9,8 @@ RSpec.feature "Admin delete posts" do
   create_posts
 
   scenario "an admin can delete a life post" do
-    visit root_path
+    visit user_lives_path
 
-    click_on "Admin Life Posts"
     click_on life.title
     click_on "Delete"
 
@@ -20,9 +19,8 @@ RSpec.feature "Admin delete posts" do
   end
 
   scenario "an admin can delete a code post" do
-    visit root_path
+    visit user_codes_path
 
-    click_on "Admin Code Posts"
     click_on code.title
     click_on "Delete"
 

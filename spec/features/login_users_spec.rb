@@ -13,6 +13,7 @@ RSpec.feature "Users can log in" do
     click_button "Sign in"
 
     expect(page).to have_current_path root_path
+    click_on "Life"
     expect(page).to have_link "Admin Life Posts" 
     expect(page).to have_link "Admin Code Posts" 
     expect(page).to have_link "New Code Post" 

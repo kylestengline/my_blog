@@ -4,7 +4,7 @@ RSpec.feature "Admin creates posts" do
 
   before(:each) do
     sign_in_as_user
-    visit root_path
+    visit lives_path
   end
 
   scenario "success in creating new life post" do

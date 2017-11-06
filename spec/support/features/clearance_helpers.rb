@@ -31,7 +31,7 @@ module Features
     end
 
     def expect_user_to_be_signed_in
-      visit root_path
+      visit lives_path
       expect(page).to have_link I18n.t("layouts.application.sign_out")
     end
 

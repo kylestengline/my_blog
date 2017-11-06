@@ -13,6 +13,9 @@ RSpec.feature "visiting a post" do
     click_on life.title
 
     expect(page).to have_current_path life_path(life)
+    expect(page).to have_content "Home"
+    expect(page).to have_content "View Code Posts"
+    expect(page).to have_content "View Life Posts"
     expect(page).to have_content life.title
     expect(page).to have_content life.content
     expect(page).to have_content life.created_at.strftime("%B %d, %Y")
@@ -25,6 +28,9 @@ RSpec.feature "visiting a post" do
     click_on code.title
 
     expect(page).to have_current_path code_path(code)
+    expect(page).to have_content "Home"
+    expect(page).to have_content "View Code Posts"
+    expect(page).to have_content "View Life Posts"
     expect(page).to have_content code.title
     expect(page).to have_content code.content
     expect(page).to have_content code.created_at.strftime("%B %d, %Y")

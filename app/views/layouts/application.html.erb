@@ -25,10 +25,6 @@
       <%= render 'shared/header' %>
     <% end %>
 
-    <% if signed_in? %>
-      <%= render 'shared/admin_nav' %>
-    <% end %>
-
     <%= yield %>
     <%= render 'shared/main' %>
 

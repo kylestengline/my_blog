@@ -1,5 +1,11 @@
 <header role="banner">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <%= link_to "Home", root_path, class: "navbar-brand" %>
+    <% if signed_in? %>
+      <%= render 'shared/admin_nav' %>
+    <% else %>
+      <%= link_to "View Code Posts", codes_path, class: "navbar-brand" %>
+      <%= link_to "View Life Posts", lives_path, class: "navbar-brand" %>
+    <% end %>
   </nav>
 </header>

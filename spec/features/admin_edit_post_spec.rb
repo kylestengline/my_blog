@@ -10,6 +10,7 @@ RSpec.feature "Admin edits" do
 
   scenario "code posts" do
     visit root_path
+    click_on "Code"
     click_on "Admin Code Posts"
     click_on code.title 
 
@@ -31,6 +32,7 @@ RSpec.feature "Admin edits" do
 
   scenario "life posts" do
     visit root_path
+    click_on "Life"
     click_on "Admin Life Posts"
     click_on life.title 
 
