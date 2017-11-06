@@ -9,11 +9,11 @@
 Life.destroy_all
 Code.destroy_all
 
-unless User.find_by(email: "me@example.com")
+unless User.find_by(email: ENV['BLOG_EMAIL'])
   User.destroy_all
   User.create!(
-    email: "me@example.com",
-    password: "password",
+    email: ENV['BLOG_EMAIL'],
+    password: ENV['BLOG_PASSWORD'],
     id: 1
   )
 end
