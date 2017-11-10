@@ -96,6 +96,7 @@ h1 {
 
 .content {
   font-weight: 400;
+  margin-bottom: 10%;
 }
 
 .content > p {
@@ -138,4 +139,17 @@ h3.crud-pages-on-posts {
 
 div.control-label {
   font-size: 20px;
+}
+
+/* Will Paginate */
+div.pagination {
+  font-size: 16px;
+}
+
+div.pagination > span {
+  letter-spacing: 0px;
+}
+
+a.next_page, em.current, a.previous_page {
+  padding: 8px;
 }

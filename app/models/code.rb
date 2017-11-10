@@ -6,4 +6,7 @@ class Code < ApplicationRecord
 
   extend FriendlyId
   friendly_id :title, use: :slugged
+
+  # will_paginate
+  self.per_page = 10
 end

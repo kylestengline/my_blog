@@ -3,7 +3,7 @@ class User::LivesController < ApplicationController
   before_action :set_life, only: [:show, :edit, :destroy, :update]
 
   def index
-    @lives = Life.all
+    @lives = Life.all.paginate(page: params[:page]).order(created_at: :desc)
   end
 
   def show

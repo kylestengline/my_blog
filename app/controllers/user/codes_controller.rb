@@ -3,7 +3,7 @@ class User::CodesController < ApplicationController
   before_action :set_code, only: [:show, :edit, :update, :destroy]
 
   def index
-    @codes = Code.all
+    @codes = Code.all.paginate(page: params[:page]).order(created_at: :desc)
   end
 
   def show

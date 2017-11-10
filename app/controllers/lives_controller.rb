@@ -1,6 +1,6 @@
 class LivesController < ApplicationController
   def index
-    @lives = Life.all
+    @lives = Life.all.paginate(page: params[:page]).order(created_at: :desc)
   end
 
   def show
