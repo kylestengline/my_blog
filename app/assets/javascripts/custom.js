@@ -23,4 +23,8 @@ $(document).ready(function(){
   setTimeout(function(){
     $('.flash-message').hide();
   }, 2000);
+
+  $("button").click(function(){
+    $(".navbar-collapse").toggleClass("collapse");
+  })
 });

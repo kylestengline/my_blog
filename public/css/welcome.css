@@ -85,3 +85,47 @@ footer {
   margin-left: 450px;
   margin-right: 450px;
 }
+
+@media only screen and (max-width: 600px) {
+  .in-the-middle, .of-all-of-it {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  span {
+    letter-spacing: -12px;
+  }
+
+  .in-the-middle {
+    margin-top: 30%;
+    margin-left: 5%;
+    margin-right: 0%;
+  }
+
+  .of-all-of-it {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 0;
+    margin-bottom: 15%;
+  }
+
+  .life-stuff, .code-stuff {
+    text-decoration: underline;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  a.life-stuff {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  a.code-stuff {
+    float: right;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

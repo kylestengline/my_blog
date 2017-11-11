@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>My Blog</title>
+    <meta name=viewport content="width=device-width">
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery-3.1.1.min' %>
-    <%= javascript_include_tag 'custom' %>
+    <!--<#%= javascript_include_tag 'jquery-3.1.1.min' %>
+  <#%= javascript_include_tag 'custom' %>-->
 
     <!-- Bootstrap -->
     <% unless current_page? sign_in_path %>

@@ -153,3 +153,44 @@ div.pagination > span {
 a.next_page, em.current, a.previous_page {
   padding: 8px;
 }
+
+/* Mobile Friendly */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 25px; 
+  }
+
+  .navbar-default .navbar-brand {
+    font-size:45px;
+  }
+
+  header {
+    margin-top: 35%;  
+  }
+
+  article {
+    width: 1000px;
+    height: 1000px;
+  }
+
+  .container {
+    margin-right: 0px;
+    margin-left: 100px;
+  }
+
+  .life-posts {
+    padding-right: 100px;
+  }
+
+  .post-title {
+    font-size: 70px;
+  }
+
+  .created-at {
+    font-size: 40px; 
+  }
+
+  .content > p {
+    font-size: 45px;
+  }
+}
