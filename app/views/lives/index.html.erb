@@ -12,7 +12,7 @@
             <%= l.created_at.strftime("%B %d, %Y") %>
           </div>
           <div class="content">
-            <%= markdown(truncate l.content, length: 1000) %>
+            <%= truncate(markdown(l.content), length: 1000, escape: false) %>
           </div>
         <% end %>
       </div>

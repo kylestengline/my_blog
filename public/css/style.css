@@ -69,6 +69,10 @@ pre > span {
   letter-spacing: 0px;
 }
 
+pre > span > span{
+  letter-spacing: 0px;
+}
+
 /* Posts */
 header {
   margin-top: -12%;
