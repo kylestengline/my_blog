@@ -80,12 +80,6 @@ a.code-stuff {
   padding: 15px;
 }
 
-footer {
-  width: 500px;
-  margin-left: 450px;
-  margin-right: 450px;
-}
-
 @media only screen and (max-width: 600px) {
   .in-the-middle, .of-all-of-it {
     text-align: center;

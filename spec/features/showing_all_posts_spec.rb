@@ -18,6 +18,7 @@ RSpec.feature "Showing all posts" do
     expect(page).to have_content life.title
     expect(page).to have_content life.created_at.strftime("%B %d, %Y")
     expect(page).to have_content life.content.truncate(1000)
+    expect(page).to have_content "Read More"
   end
 
   scenario "#code" do
@@ -30,5 +31,6 @@ RSpec.feature "Showing all posts" do
     expect(page).to have_content code.title
     expect(page).to have_content code.created_at.strftime("%B %d, %Y")
     expect(page).to have_content code.content.truncate(1000)
+    expect(page).to have_content "Read More"
   end
 end

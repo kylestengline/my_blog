@@ -1,5 +1,5 @@
-<article>
-  <div class="container">
+<div class="container">
+  <article>
     <div id="all-the-posts">
       <div class="life-posts">
         <% @lives.each do |l| %>
@@ -13,10 +13,11 @@
           </div>
           <div class="content">
             <%= truncate(markdown(l.content), length: 1000, escape: false) %>
+            <br/><%= link_to "Read More", user_life_path(l), class: "read-more-link" %>
           </div>
         <% end %>
       </div>
     </div>
     <%= will_paginate @lives %>
-  </div>
-</article>
+  </article>
+</div>
