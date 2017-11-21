@@ -1,5 +1,7 @@
 body {
   background-color: #fff;
+  background: url("/img/the_middle.jpg") no-repeat;
+  background-size: cover;
 }
 
 div#welcome-page {
