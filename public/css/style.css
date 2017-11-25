@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif, Helvetica;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333;
@@ -350,5 +350,14 @@ footer > p {
     margin-right: -150%;
     margin-bottom: 15%;
     font-size: 70px;
+  }
+
+  footer {
+    margin-right: -165%;
+    margin-left: 50%;
+  }
+
+  footer > p {
+    font-size: 75px;
   }
 }
