@@ -42,7 +42,7 @@ a {
 
 a:hover {
   transition: 1s;
-  color: #0a5290;
+  color: #222;
   text-decoration: underline;
 }
 
