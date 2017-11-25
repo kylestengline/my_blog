@@ -39,7 +39,7 @@ Life.create!([
   },
   {
     title: "The Letter",
-    content: "I saw a movie a few years ago that really helped shape the way I pursue my goals. The person this letter is to isn't the most inspirational person in my life, but I do have to give credit to them in helping me get my feet off the ground and pursuing my, then, goals. And so, the letter. 
+    content: "I saw a movie a few years ago that really helped shape the way I pursue my goals. The person this letter is to isn't the most inspirational person in my life. However, I do have to give credit to them in helping me get my feet off the ground and pursuing my, then, goals. Without further ado, the letter. 
 > Alas! In the sum of this world I've come down to one of a few treasures. One of which stands before me underneath the infinite light. To sum up the words spent in this note; I want to thank you for being you. To elicit the emotions running through my mind, I thought it best to write them. Mostly, it's the fault of time that shortens our encounter, but in the same notion it has also brought us here. So, you stand before me, the accolade of my life. And just as simply, no words could find me. Thus you receive a letter. Though my speech has been deterred, the blank pages of this world found such verbiage, thus I present them to you:
     
 >    Inspiration wove a tapestry into such magnificence, I found myself enveloped by it. You've undoubtedly added to its splendid color. I see in your eyes the threads that make it whole. The completeness of which could not have been manufactured without you. And so an unaccustomed tapestry hangs ornamentally magnificent; bearing the strength that time will never wear. Once more, thank you for being you. 
