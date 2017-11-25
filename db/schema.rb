@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20171101060109) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "codes", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "slug"
     t.index ["slug"], name: "index_codes_on_slug", unique: true
     t.index ["user_id"], name: "index_codes_on_user_id"
@@ -40,7 +43,7 @@ ActiveRecord::Schema.define(version: 20171101060109) do
     t.text "content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "slug"
     t.index ["slug"], name: "index_lives_on_slug", unique: true
     t.index ["user_id"], name: "index_lives_on_user_id"
@@ -57,4 +60,6 @@ ActiveRecord::Schema.define(version: 20171101060109) do
     t.index ["remember_token"], name: "index_users_on_remember_token"
   end
 
+  add_foreign_key "codes", "users"
+  add_foreign_key "lives", "users"
 end
