@@ -27,7 +27,7 @@ Life.create!([
   },
   {
     title: "Sea Of Heart",
-    content: "For as long as I can remember, I've loved the sea. I love everything about it; the mystery, the vastness, the things we don't even know are there. It mostly impresses me because there is nothing else like it and nothing nearly as powerful as the sea. Thus, I've written about how I feel:
+    content: "For as long as I can remember, I've loved the sea. I love everything about it; the mystery, the movement, the steadiness, the things we don't even know are there. I once read, *It is the dim haze of mystery that adds enchantment to pursuit*, and that reminds me of the sea. One day soon, I'll be sailing on the pacific and I can't wait to experience it. The sea mostly impresses me because there is nothing else like it and nothing nearly as powerful or beautiful. Thus, I've written a little something about how I feel:
 > Of all my days that were, I look back into my past and see what was and all that will never be. Left things behind to remember me and preserve our days of yore. For eternity doesn't seem so long when I'm with you. So pull the lever, hoist the sail and swing downwind, for my heart you carry and I long for your embrace. Hold steady the tide, and the seas be calm; for the stern faces west where the sun sets before your eyes. Let all the stars guide me and the moon that shares our eyes: my compass in the night. May the masts hold strong and no storm shall best me or navigation fail; for I follow the winds that sound your name and bring me home to you.",
     user_id: 1
   },
