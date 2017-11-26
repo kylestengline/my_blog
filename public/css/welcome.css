@@ -1,3 +1,13 @@
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden
+}
+
+header {
+  margin-top: 5%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif, Helvetica;
   background-color: #fff;
@@ -6,8 +16,13 @@ body {
 }
 
 div#welcome-page {
-  margin-top: 12%;
-  text-align: center;
+  position: fixed;
+}
+
+#welcome-page div {
+  display: inline;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .in-the-middle, .of-all-of-it {
@@ -16,19 +31,6 @@ div#welcome-page {
 
 span {
   letter-spacing: -18px;
-}
-
-.in-the-middle {
-  float: left;
-  margin-left: 9%;
-  margin-right: 9%;
-}
-
-.of-all-of-it {
-  float: left;
-  margin-left: -7%;
-  margin-right: -7%;
-  margin-bottom: 5%;
 }
 
 span.n, .e, .f {
@@ -48,7 +50,7 @@ a:hover {
 
 .posts {
   font-size: 45px;
-  margin-top: 12%;
+  margin-top: 5%;
   margin-right: 7%;
 }
 
@@ -75,17 +77,9 @@ a.code-stuff {
   padding-left: 30px;
 }
 
-.admin-life-stuff, .admin-code-stuff {
-  padding: 15px;
-}
-
-.admin-life-stuff, .admin-code-stuff {
-  padding: 15px;
-}
-
 @media only screen and (max-width: 600px) {
   .in-the-middle, .of-all-of-it {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
   }
 
@@ -94,16 +88,12 @@ a.code-stuff {
   }
 
   .in-the-middle {
-    margin-top: 30%;
-    margin-left: 5%;
-    margin-right: 0%;
   }
 
-  .of-all-of-it {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 0;
-    margin-bottom: 15%;
+  #welcome-page > div.of-all-of-it {
+    position: fixed;
+    display: block;
+    margin-left: 25px;
   }
 
   .life-stuff, .code-stuff {
@@ -125,4 +115,14 @@ a.code-stuff {
     padding-right: 0px;
     padding-left: 0px;
   }
+
+  .posts {
+    margin-top: 25%;
+    margin-right: 0%;
+  }
+
+.non-signed-in-posts {
+  margin-right: 15.5%;
+  margin-left: 15.5%;
+}
 }

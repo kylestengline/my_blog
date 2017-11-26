@@ -1,35 +1,41 @@
-<div id="welcome-page">
-  <div class="in-the-middle">
-    <span class="empty"></span>
-    <span class="i">I</span>
-    <span class="n">n</span> 
-    <span class="t">T</span>
-    <span class="h">h</span>
-    <span class="e">e</span>
-    <span class="m">M</span>
-    <span class="i">i</span>
-    <span class="d">d</span>
-    <span class="d">d</span>
-    <span class="l">l</span>
-    <span class="e">e</span>
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <div id="welcome-page">
+        <div class="in-the-middle">
+          <span class="empty"></span>
+          <span class="i">I</span>
+          <span class="n">n</span> 
+          <span class="t">T</span>
+          <span class="h">h</span>
+          <span class="e">e</span>
+          <span class="m">M</span>
+          <span class="i">i</span>
+          <span class="d">d</span>
+          <span class="d">d</span>
+          <span class="l">l</span>
+          <span class="e">e</span>
+        </div>
+        <div class="of-all-of-it">
+          <span class="o">O</span>
+          <span class="f">f</span>
+          <span class="a">A</span>
+          <span class="l">l</span>
+          <span class="l" style="letter-spacing: 10px;">l</span>
+          <span class="o">O</span>
+          <span class="f">f</span>
+          <span class="i">I</span>
+          <span class="t">t</span>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="of-all-of-it">
-    <span class="o">O</span>
-    <span class="f">f</span>
-    <span class="a">A</span>
-    <span class="l">l</span>
-    <span class="l" style="letter-spacing: 10px;">l</span>
-    <span class="o">O</span>
-    <span class="f">f</span>
-    <span class="i">I</span>
-    <span class="t">t</span>
-  </div>
-</div>
+</header>
 <div class="posts">
   <% if current_page? root_path  %>
     <div class="non-signed-in-posts">
-      <%= link_to "Life", lives_path, class: "life-stuff" %>
-      <%= link_to "Code", codes_path, class: "code-stuff" %>
+      <%= link_to "Life", lives_path, class: "life-stuff page-scroll" %>
+      <%= link_to "Code", codes_path, class: "code-stuff page-scroll" %>
     </div>
   <% end %>
 </div>
