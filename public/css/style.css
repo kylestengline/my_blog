@@ -166,7 +166,7 @@ a.next_page, em.current, a.previous_page {
 }
 
 footer {
-  margin-top: 30%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -179,7 +179,8 @@ footer > p {
 }
 
 /* Mobile Friendly */
-@media only screen and (max-width: 600px) {
+/* Phones */
+@media only screen and (max-width: 500px) {
   .navbar {
     padding: 25px; 
   }
@@ -201,7 +202,7 @@ footer > p {
   }
 
   header {
-    margin-top: 45%;  
+    margin-top: 55%;  
   }
 
   /* Index Pages */
@@ -304,4 +305,81 @@ footer > p {
   footer > p {
     font-size: 75px;
   }
+}
+
+/* Nexus 5x */
+@media only screen
+  and (min-device-width: 412px)
+  and (max-device-width: 732px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    footer {
+      margin-right: -135%;
+    }
+}
+
+/* iPad 3*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      margin-top: -35%;
+    }
+
+    .nav > li > a.page-scroll, .page-scroll {
+      font-size: 30px;
+    }
+
+    h1.post-title {
+      font-size: 65px;
+    }
+
+    .created-at {
+      font-size: 30px;
+    }
+
+    .content > p {
+      font-size: 40px;
+    }
+
+    blockquote > p {
+      font-size: 35px;
+    }
+
+    .container {
+      width: 1000px;
+      margin-left: 50px;
+    }
+
+    footer {
+      margin-top: 10%;
+      margin-left: 45%;
+    }
+}
+
+/* iPad Pro */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      margin-top: -35%;
+    }
+
+    .content {
+      padding-right: 75px;
+    }
+
+    hr {
+      padding-left: 250px;
+      padding-right: 550px;
+    }
+
+    .container {
+      width: 1000px;
+    }
+
+    footer {
+      margin: 0 auto;
+    }
 }
