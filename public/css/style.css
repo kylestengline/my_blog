@@ -281,6 +281,12 @@ footer > p {
     margin-bottom: 30px;
   }
 
+  .edit-delete-actions > a {
+    padding: 25px 30px;
+    font-size: 60px;
+    margin-right: 5%;
+  }
+
   /* New Post form */
   textarea.form-control {
     width: 95%;
