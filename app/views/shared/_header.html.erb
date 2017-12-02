@@ -6,39 +6,24 @@
           <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
         </button>
         <%= link_to "Home", root_path, class: "navbar-brand page-scroll" %>
-        <% if signed_in? %>
-          <%= link_to "Sign Out", sign_out_path, method: :delete, class: "navbar-brand page-scroll" %>
-        <% end %>
+        <%= link_to "Sign Out", sign_out_path, method: :delete, class: "navbar-brand page-scroll" %>
       </div>
-      <% if signed_in? %>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to "Admin Life Posts", user_lives_path, class: "page-scroll" %>
-            </li>
-            <li>
-              <%= link_to "Admin Code Posts", user_codes_path, class: "page-scroll" %>
-            </li>
-            <li>
-              <%= link_to "New Life Post", new_user_life_path, class: "page-scroll" %>
-            </li>
-            <li>
-              <%= link_to "New Code Post", new_user_code_path, class: "page-scroll" %>
-            </li>
-          </ul>
-        </div>
-      <% else %>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to "View Code Posts", codes_path, class: "page-scroll" %>
-            </li>
-            <li>
-              <%= link_to "View Life Posts", lives_path, class: "page-scroll" %>
-            </li>
-          </ul>
-        </div>
-      <% end %>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <%= link_to "Admin Life Posts", user_lives_path, class: "page-scroll" %>
+          </li>
+          <li>
+            <%= link_to "Admin Code Posts", user_codes_path, class: "page-scroll" %>
+          </li>
+          <li>
+            <%= link_to "New Life Post", new_user_life_path, class: "page-scroll" %>
+          </li>
+          <li>
+            <%= link_to "New Code Post", new_user_code_path, class: "page-scroll" %>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="site-title">
+    <h1 class="title">
+      In The Middle Of All Of It
+    </h1>
+    <% if current_page? lives_path %>
+      <div class="link-to-code">
+        <%= link_to "View Code Posts", codes_path, class: "go-to-code-posts" %>
+      </div>
+    <% else %>
+      <div class="link-to-life">
+        <%= link_to "View Life Posts", lives_path, class: "go-to-life-posts" %>
+      </div>
+    <% end %>
+  </div>
+</div>
