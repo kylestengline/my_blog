@@ -1,11 +1,18 @@
 @media only screen and (max-width: 600px) {
+  .container {
+    width: 600px;
+  }
+
+  h1.title {
+    font-size: 65px;
+  }
+
   footer {
     margin-right: -100%;
     margin-left: 0%;
   }
 
   .wrapper {
-    margin-top: 50%;
     margin-left: 0%;
   }
 
@@ -19,10 +26,10 @@
 
   input.form-control {
     display: block;
-    width: 650px;
+    width: 700px;
     height: 125px;
     padding: 12px 25px;
-    font-size: 45px;
+    font-size: 50px;
     line-height: 1.42857143;
     color: #555555;
     background-color: #fff;

@@ -7,7 +7,7 @@ body {
 }
 
 div.site-title {
-  margin-top: 2%;
+  margin-top: 5%;
   margin-bottom: 2%;
 }
 
@@ -20,12 +20,7 @@ h1.title {
 }
 
 .site-title a, .back-to-code, .back-to-life {
-  font-size: 16px;
-}
-
-.wrapper {
-  margin-top: 20%;
-  margin-bottom: 80px;
+  font-size: 20px;
 }
 
 .form-signin {
@@ -118,6 +113,10 @@ h1 {
   font-size: 20px;
 }
 
+a.read-more-link {
+  font-size: 18px;
+}
+
 p > a {
   color: #0a5290;
 }
@@ -141,7 +140,7 @@ hr {
 /* Form for Posts */
 input.form-control, textarea.form-control {
   width: 90%;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 textarea.form-control {
@@ -204,6 +203,7 @@ footer > p {
   }
 
   h1.title {
+    font-family: 'Rokkitt', serif;
     font-size: 75px;
     padding: 0 0 40px; 0;
   }
@@ -269,6 +269,10 @@ footer > p {
   }
 
   blockquote>p {
+    font-size: 55px;
+  }
+
+  a.read-more-link {
     font-size: 55px;
   }
 
