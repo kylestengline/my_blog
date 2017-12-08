@@ -1,5 +1,13 @@
 module ApplicationHelper
 
+  def site_title
+    if current_page? root_path
+      "Kyle Stengline | Welcome"
+    else
+      "Kyle Stengline | Personal Blog"
+    end
+  end
+
   def admin_edit_code
     if signed_in?
       link_to "Edit", edit_user_code_path(@code.id), class: "btn btn-primary btn-lg btn-space" 

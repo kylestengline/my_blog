@@ -7,9 +7,12 @@
       <div class="link-to-code">
         <%= link_to "View Code Posts", codes_path, class: "go-to-code-posts" %>
       </div>
-    <% else %>
+    <% elsif current_page? codes_path %>
       <div class="link-to-life">
         <%= link_to "View Life Posts", lives_path, class: "go-to-life-posts" %>
+      </div>
+    <% else %>
+      <div>
       </div>
     <% end %>
   </div>
