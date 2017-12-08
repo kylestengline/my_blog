@@ -234,7 +234,7 @@ footer > p {
   }
 
   header {
-    margin-top: 55%;  
+    margin-top: 5%;  
   }
 
   /* Index Pages */
@@ -329,15 +329,42 @@ footer > p {
   }
 
   /* New Post form */
+  div.control-label {
+    font-size: 65px;
+  }
+
+  input.form-control {
+    display: block;
+    width: 1000px;
+    height: 125px;
+    padding: 12px 25px;
+    font-size: 50px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
   textarea.form-control {
-    width: 95%;
+    width: 1000px;
     height: 700px;
     font-size: 60px;
   }
 
+  input[type="submit"] {
+    font-size: 60px;
+  }
+
+  div.col-md-offset-1 {
+    margin-right: -175px;
+    margin-top: 50px;
+  }
+
   h3.crud-pages-on-posts {
     text-align: center;
-    margin-top: 50%;
+    margin-top: 5%;
     margin-left: 0%;
     margin-right: -150%;
     margin-bottom: 15%;

@@ -1,10 +1,10 @@
 @media only screen and (max-width: 600px) {
   .container {
-    width: 600px;
+    width: 525px;
   }
 
   h1.title {
-    font-size: 65px;
+    font-size: 55px;
   }
 
   footer {
@@ -26,7 +26,7 @@
 
   input.form-control {
     display: block;
-    width: 700px;
+    width: 600px;
     height: 125px;
     padding: 12px 25px;
     font-size: 50px;
