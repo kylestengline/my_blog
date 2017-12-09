@@ -1,9 +1,12 @@
 @media only screen and (max-width: 600px) {
   .container {
-    width: 525px;
+    width: 555px;
+    margin-left: 200px;
+    margin-right: 0px;
   }
 
   h1.title {
+    text-align: center;
     font-size: 55px;
   }
 
@@ -13,6 +16,7 @@
   }
 
   .wrapper {
+    width: 700px;
     margin-left: 0%;
   }
 
@@ -26,10 +30,10 @@
 
   input.form-control {
     display: block;
-    width: 600px;
+    width: 630px;
     height: 125px;
     padding: 12px 25px;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 1.42857143;
     color: #555555;
     background-color: #fff;
@@ -38,9 +42,9 @@
     border-radius: 4px;
   }
 
-  .form-horizontal {
+  form.form-horizontal {
     margin-left: 40px;
-    width: 370px;
+    width: 700px;
     margin-right: 40px;
   }
 
@@ -56,6 +60,5 @@
     font-size: 65px;
     padding: 25px;
     margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: -2%;
   }

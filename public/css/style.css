@@ -329,16 +329,20 @@ footer > p {
   }
 
   /* New Post form */
+  form.form-horizontal {
+    width: 1000px;
+  }
+
   div.control-label {
     font-size: 65px;
   }
 
-  input.form-control {
+  input.form-control, textarea.form-control {
     display: block;
     width: 1000px;
     height: 125px;
     padding: 12px 25px;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 1.42857143;
     color: #555555;
     background-color: #fff;
@@ -348,9 +352,7 @@ footer > p {
   }
 
   textarea.form-control {
-    width: 1000px;
-    height: 700px;
-    font-size: 60px;
+    height: 800px;
   }
 
   input[type="submit"] {
@@ -358,7 +360,7 @@ footer > p {
   }
 
   div.col-md-offset-1 {
-    margin-right: -175px;
+    margin-right: 540px;
     margin-top: 50px;
   }
 
@@ -366,7 +368,7 @@ footer > p {
     text-align: center;
     margin-top: 5%;
     margin-left: 0%;
-    margin-right: -150%;
+    margin-right: -205%;
     margin-bottom: 15%;
     font-size: 70px;
   }
