@@ -117,8 +117,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* iPhone 6 + */
-@media only screen and (max-width: 414px)
-  and (max-device-width: 736px) 
+@media only screen and (min-device-width: 414px)
+  and (max-device-height: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) {
   div#welcome-page {
     margin-left: 5%;
@@ -147,6 +147,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .life-stuff, .code-stuff {
     padding: 0px;
   }
+}
+
+/*iPhone X*/
+@media screen
+  and (min-device-width: 375px)
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    #welcome-page > div.in-the-middle {
+      margin-left: 2px;
+      margin-right:2px;
+    }
+
+    #welcome-page > div.of-all-of-it {
+      margin-left: 18px;
+    }
 }
 
 /* Galaxy S5 */
