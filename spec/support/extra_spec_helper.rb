@@ -1,5 +1,7 @@
+require 'rails_helper'
+
 def sign_in_as_user
-  user = FactoryGirl.create :user
+  user = FactoryBot.create :user
   visit sign_in_path
 
   fill_in "Email", with: user.email
@@ -25,11 +27,7 @@ def failed_post
   expect(page).to have_content "Post was not created."
 end
 
-RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
-end
-
 def create_posts
-  let!(:code) { FactoryGirl.create(:code) }
-  let!(:life) { FactoryGirl.create(:life) }
+  let!(:code) { FactoryBot.create(:code) }
+  let!(:life) { FactoryBot.create(:life) }
 end

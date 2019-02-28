@@ -3,7 +3,7 @@ require 'lives_controller'
 
 RSpec.describe LivesController, type: :controller do
 
-  let!(:life) { FactoryGirl.create(:life) }
+  let!(:life) { FactoryBot.create(:life) }
 
   describe "visitor views life posts" do
     render_views

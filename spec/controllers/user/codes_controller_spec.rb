@@ -4,7 +4,7 @@ require 'user/codes_controller'
 RSpec.describe User::CodesController, type: :controller do
 
   let!(:user) { User.create(email: "user@example.com", password: "password") }
-  let!(:code) { FactoryGirl.create(:code) }
+  let!(:code) { FactoryBot.create(:code) }
 
   before(:each) do
     sign_in_as user

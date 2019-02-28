@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :code do
     created_at Date.today
     title "Code post title"

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Life, type: :model do
-  let!(:life) { FactoryGirl.create(:life) }
+  let!(:life) { FactoryBot.create(:life) }
 
   it "is valid with valid attributes" do
     expect(life).to be_valid

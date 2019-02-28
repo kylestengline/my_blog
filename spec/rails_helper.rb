@@ -10,7 +10,7 @@ require 'database_cleaner'
 require "clearance/rspec"
 require 'factories/clearance'
 require 'support/controller_macros'
-require 'support/spec_helper'
+require 'support/extra_spec_helper'
 require 'factories/post_factories'
 require 'support/matchers/have_filters'
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -43,8 +43,10 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   #config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+  config.include FactoryBot::Syntax::Methods
+
   config.before(:all) do
-    FactoryGirl.reload
+    FactoryBot.reload
   end
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your

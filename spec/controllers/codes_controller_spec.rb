@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe CodesController, type: :controller do
 
-  let!(:code) { FactoryGirl.create(:code) }
+  let!(:code) { FactoryBot.create(:code) }
 
   describe "visitors view code posts" do
     render_views

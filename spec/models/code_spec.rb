@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Code, type: :model do
-  let!(:code) { FactoryGirl.create(:code) }
+  let!(:code) { FactoryBot.create(:code) }
 
   it "is valid with valid attributes" do
     expect(code).to be_valid
