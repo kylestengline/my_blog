@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 def sign_in_as_user
   user = FactoryBot.create :user
   visit sign_in_path
