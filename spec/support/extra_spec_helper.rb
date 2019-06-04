@@ -1,5 +1,5 @@
 def sign_in_as_user
-  user = FactoryBot.create :user
+  user = FactoryBot.create(:user)
   visit sign_in_path
 
   fill_in "Email", with: user.email

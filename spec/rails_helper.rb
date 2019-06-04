@@ -10,8 +10,6 @@ require 'database_cleaner'
 require "clearance/rspec"
 require 'support/controller_macros'
 require 'support/extra_spec_helper'
-require 'factories/user_factories'
-require 'factories/post_factories'
 require 'support/matchers/have_filters'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -44,7 +42,9 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
   config.use_transactional_fixtures = false
-
+  
+  #Shoulda Matchers config
+  config.include(Shoulda::Matchers::ActiveRecord, type: :model)
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   #config.fixture_path = "#{::Rails.root}/spec/fixtures"
   
