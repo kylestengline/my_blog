@@ -43,6 +43,7 @@ class User::LivesController < ApplicationController
       redirect_to user_lives_path
     else
       render :show
+      flash[:danger] = "Post was not deleted."
     end
   end
 

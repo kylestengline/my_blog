@@ -45,6 +45,19 @@ RSpec.describe User::LivesController, type: :controller do
         expect(response).to redirect_to user_lives_path
         expect(flash[:success]).to eq "Post created successfully."
       end
+
+      it "errors when a post is not created" do
+        post :create, params: {
+          life: {
+            created_at: Date.today, 
+            title: "", 
+            content: "",
+            user_id: user.id
+          }
+        }
+        expect(response).to render_template :new
+        expect(flash[:danger]).to eq "Post was not created."
+      end
     end
 
     context "#edit" do

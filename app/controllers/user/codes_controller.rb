@@ -43,7 +43,7 @@ class User::CodesController < ApplicationController
       redirect_to user_codes_path
     else
       render :show
-      flash[:danger] = "Post deleted unsuccessfully."
+      flash[:danger] = "Post was not deleted."
     end
   end
 
