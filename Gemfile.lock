@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 2af458a10d336ec15a5734dba27709c2f8eb745b
+  revision: e5389791288cc15f675caa11c3e3f1e194b644ce
   specs:
     actioncable (7.0.0.alpha)
       actionpack (= 7.0.0.alpha)
@@ -139,7 +139,7 @@ GEM
     email_validator (2.2.3)
       activemodel
     erubi (1.10.0)
-    execjs (2.7.0)
+    execjs (2.8.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
