@@ -1,7 +1,6 @@
 source 'https://rubygems.org/'
 
 ruby '3.0.1'
-#ruby '2.6.5'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -42,7 +41,7 @@ gem 'redcarpet'
 gem 'coderay'
 gem 'jquery-rails'
 gem 'pg'
-gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
